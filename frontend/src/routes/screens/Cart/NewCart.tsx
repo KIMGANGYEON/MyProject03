@@ -68,9 +68,6 @@ const NewCart = () => {
     }
   };
 
-  const handleCountPlus = () => {};
-  const handleCountMinus = () => {};
-
   useEffect(() => {
     dispatch(getUserNewCart(userId)).then((data) => {
       setUserNewList((data.payload as { userNewCart: NewList[] }).userNewCart);
@@ -99,6 +96,8 @@ const NewCart = () => {
               <img src={item.image} alt="" />
               <h1>{item.title}</h1>
               <h1>{item.author}</h1>
+
+              <span>{item.quantity} 개</span>
             </div>
           ))}
         </div>

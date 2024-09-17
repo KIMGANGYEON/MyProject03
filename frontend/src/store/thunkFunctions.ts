@@ -279,6 +279,19 @@ export const getUserNewCart = createAsyncThunk(
   }
 );
 
+export const getUserOldCart = createAsyncThunk(
+  "user/newCart",
+  async (userId: string, thunkAPI) => {
+    try {
+      const response = await axiosInstance.post(`/user/old/cart`, { userId });
+      return response.data;
+    } catch (error: any) {
+      console.log(error);
+      return thunkAPI.rejectWithValue(error.response.data || error.message);
+    }
+  }
+);
+
 // export const productImgDelete = createAsyncThunk(
 //   "product/deleteProductImg",
 //   async (img: string, thunkAPI) => {

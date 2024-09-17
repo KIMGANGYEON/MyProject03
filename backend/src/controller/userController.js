@@ -347,3 +347,18 @@ export const getUserNewCart = async (req, res, next) => {
     next(error);
   }
 };
+
+export const getUserOldCart = async (req, res, next) => {
+  const { userId } = req.body;
+  const user = await User.findOne({ _id: userId });
+  const userOldCart = user.cart.used;
+
+  if (userOldCart.length === 0) {
+    return res.status(400).json({ message: "장바구니가 비었습니다" });
+  }
+
+  try {
+  } catch (error) {
+    next(error);
+  }
+};

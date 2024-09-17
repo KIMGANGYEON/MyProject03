@@ -19,6 +19,8 @@ const {
   postUserAddCart,
   postUserAddCartUsed,
   getUserNewCart,
+  getUserOldCart,
+  getUserOldCart2,
 } = require("../controller/userController");
 
 const userRouter = express.Router();
@@ -59,5 +61,6 @@ userRouter.post("/delete/user/product", auth, postUserDeleteUserProduct);
 userRouter.post("/add/cart", auth, postUserAddCart);
 userRouter.post("/add/cart/used", auth, postUserAddCartUsed);
 userRouter.post("/new/cart", auth, getUserNewCart);
+userRouter.post("/old/cart", auth, getUserOldCart);
 
 export default userRouter;
