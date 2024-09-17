@@ -1,0 +1,43 @@
+.usedproduct {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  .usedproduct_header {
+    h1 {
+      font-size: 40px;
+      font-weight: bold;
+    }
+  }
+  .usedproduct_item {
+    margin-top: 20px;
+    .usedproduct_item_wrap {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      .usedproduct_item_img {
+        img {
+          width: 400px;
+          height: 250px;
+        }
+      }
+      .usedproduct_item_text {
+        display: flex;
+        gap: 20px;
+        font-size: 20px;
+        margin-top: 5px;
+        h1 {
+          font-weight: bold;
+          cursor: pointer;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

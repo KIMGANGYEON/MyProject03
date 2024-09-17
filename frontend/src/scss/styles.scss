@@ -1,0 +1,28 @@
+// Common
+@import "./common/reset";
+@import "./components/navbar";
+
+//Screens
+
+//Home
+@import "./screens/home/slidebox";
+@import "./screens/home/hititems";
+@import "./screens/home/bookselet";
+
+//Product
+@import "./screens/product/productdetail";
+@import "./screens/product/productlist";
+@import "./screens/product/usedproduct";
+@import "./screens/product/usedproductdetail";
+
+//User
+@import "./screens/user/useredituserinfo";
+@import "./screens/user/useruploadproduct";
+@import "./screens/user/userenteruserproduct";
+
+//Cart
+@import "./screens/cart/usercart";
+@import "./screens/cart/newcart";
+
+//Login
+@import "./screens/login";

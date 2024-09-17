@@ -1,0 +1,32 @@
+.newcart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .newcart_header {
+    margin-top: 10px;
+    font-size: 30px;
+  }
+  .newcart_wrap {
+    margin-top: 20px;
+    .newcart_item {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 20px;
+      img {
+        border: 1px solid black;
+        width: 150px;
+      }
+      .newcart_quantity {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 50px;
+        span {
+          margin: 0px 10px;
+        }
+      }
+    }
+  }
+}

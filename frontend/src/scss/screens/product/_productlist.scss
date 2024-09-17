@@ -1,0 +1,47 @@
+.booklist {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .booklist_header {
+    h1 {
+      font-size: 50px;
+      font-weight: bold;
+    }
+  }
+  .booklist_box {
+    width: 1200px;
+    overflow: hidden;
+    .booklist_item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 25px;
+      border-bottom: 1px solid black;
+      gap: 20px;
+      img {
+        width: 150px;
+        border: 1px solid black;
+      }
+      .booklist_item_text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        gap: 20px;
+        h1 {
+          font-size: 25px;
+          &:hover {
+            text-decoration: underline;
+            text-underline-offset: 2px;
+          }
+        }
+        h2 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
